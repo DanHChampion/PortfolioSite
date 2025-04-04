@@ -1,0 +1,37 @@
+
+// Colours
+
+$rich-black: #000814;
+$oxford-blue: #008000;
+// $oxford-blue: #001d3d;
+$yale-blue: #003566;
+$mikado-yellow: #ffc300;
+$gold: #ffd60a;
+$white: #F2F2E8;
+
+// Navbar
+
+$navbar-height: 70px;
+$navbar-mobile-height: 50px;
+$navbar-background: $white;
+$navbar-logo-colour: black;
+$navbar-link-colour: black;
+$navbar-link-hover-colour: $oxford-blue;
+$navbar-link-hover-bg-colour: #0000001f;
+
+// Section
+$section-height: calc(100vh - $navbar-height);
+$section-bg-colour: $white;
+
+
+@mixin bounce($distance) {
+    @keyframes bounce {
+        0%,
+        100% {
+            transform: translateY($distance);
+        }
+        50% {
+            transform: translateY(0%);
+        }
+    }
+}

@@ -1,0 +1,29 @@
+@use '@/styles/variables.scss' as *;
+
+
+.html {
+  scroll-behavior: smooth;
+  background-color: $white;
+  overflow-x: hidden;
+  position: relative;
+}
+.body {
+  display: flex;
+  flex-direction: column;
+  min-height: fit-content;
+  overflow-x: hidden;
+  position: relative;
+  
+}
+.page {
+  background-color: $section-bg-colour;
+  min-height: fit-content;
+  color: black;
+
+  section {
+    min-height: calc(100vh - $navbar-height);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

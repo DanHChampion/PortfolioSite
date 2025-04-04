@@ -1,0 +1,135 @@
+@use '@/styles/variables.scss' as *;
+
+.contactSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 35px;
+
+    h1 {
+        text-align: center;
+        margin-bottom: 1.5rem;
+        font-size: 2rem;
+    }
+
+    .contactForm {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+        margin-bottom: 2rem;
+        border: 5px solid black;
+        font-size: 1.5rem;
+        padding: 2rem;
+        margin: 5rem;
+        max-width: 1000px;
+        width: 100%;
+        background-color: $white;
+        filter: drop-shadow(5px 5px 0 black);
+
+        h1 {
+            text-align: left;
+            height: 50px;
+            margin: 0;
+        }
+
+        p {
+            grid-column: span 2;
+            margin: 0;
+        }
+
+        .socials {
+            display: flex;
+            justify-content: flex-end;
+            align-items: flex-end;
+            gap: 1rem;
+            height: 50px;
+
+            a {
+                transition: 0.3s ease;
+
+                &:hover {
+                    transform: translateY(-5px);
+                }
+            }
+        }
+
+        input,
+        textarea {
+            font-family: inherit;
+            padding: 0.5rem;
+            font-size: 1.5rem;
+            border: 5px solid black;
+            background-color: $white;
+            color: black;
+            resize: none;
+            outline: none;
+        }
+
+        textarea {
+            grid-column: span 2;
+        }
+
+        button {
+            grid-column: span 2;
+            font-family: inherit;
+            padding: 0.75rem;
+            background-color: $oxford-blue;
+            color: $white;
+            border: 5px solid black;
+            cursor: pointer;
+            font-weight: bold;
+            font-size: 1.5rem;
+            transition: 0.3s ease;
+
+            &:hover {
+                filter: brightness(0.8);
+            }
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        .contactForm {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+            padding: 1rem;
+            margin: 2rem;
+
+            h1 {
+                font-size: 1.5rem;
+                height: auto;
+            }
+
+            p {
+                font-size: 1rem;
+            }
+
+            input,
+            textarea,
+            button {
+                box-sizing: border-box;
+                -moz-box-sizing: border-box;
+                width: 300px;
+            }
+
+            input,
+            textarea,
+            button {
+                font-size: 1.2rem;
+                padding: 0.5rem;
+            }
+
+            .socials {
+                justify-content: center;
+                gap: 0.5rem;
+
+                a {
+                    font-size: 1.2rem;
+                }
+            }
+        }
+    }
+}

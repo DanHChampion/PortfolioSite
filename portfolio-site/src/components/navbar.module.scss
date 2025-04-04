@@ -1,0 +1,109 @@
+@use '@/styles/variables.scss' as *;
+
+.navBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $navbar-background;
+    color: $white;
+    height: $navbar-height;
+    padding: 0 50px;
+    box-sizing: border-box;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    border-bottom: 5px solid black;
+
+    .logo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 80px;
+        font-size: 1.2rem;
+        font-weight: bold;
+        color: $navbar-logo-colour;
+        text-transform: uppercase;
+        text-decoration: none;
+        height: 100%;
+    }
+    
+    .hamburger {
+        display: none;
+    }
+
+    .navLinks {
+        display: flex;
+        height: 100%;
+
+        .navLink {
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 120px;
+            color: $navbar-link-colour;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 1rem;
+            font-weight: bold;
+            transition: color 0.3s ease;
+
+            &:hover {
+                color: $navbar-link-hover-colour;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .navBar {
+        height: $navbar-mobile-height;
+        align-items: flex-start;
+        padding: 10px 20px;
+
+        .logo {
+            margin-left: 0;
+            font-size: 1rem;
+        }
+
+        .hamburger {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 50px;
+            height: 100%;
+            font-size: 1.4rem;
+            cursor: pointer;
+        }
+
+        .navLinks {
+            position: absolute;
+            background-color: $white;
+            border-left: 5px solid black;
+            height: 100vh;
+            top: $navbar-mobile-height;
+            flex-direction: column;
+            left: -5px;
+            width: 100%;
+            z-index: 1000;
+            transform: translateX(100%);
+            transition: transform 0.5s ease;
+
+            .navLink {
+                width: 100%;
+                height: 60px;
+                padding: 10px 0;
+                color: black;
+                z-index: 1000;
+                font-size: 1.4rem;
+                border-bottom: 5px solid black;
+            }
+
+            &.active {
+                transform: translateX(0%);
+            }
+        }
+    }
+}

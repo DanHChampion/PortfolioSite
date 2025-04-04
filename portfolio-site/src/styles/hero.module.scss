@@ -1,0 +1,137 @@
+@use '@/styles/variables.scss' as *;
+
+.heroSection {
+    color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border-top: 0;
+    padding: 30px;
+
+    .left {
+        width: 500px;
+        height: 80vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0 2rem;
+        color: inherit;
+
+        h1 {
+            font-size: 3.5rem;
+            margin-top: 0;
+            margin-bottom: .5rem;
+        }
+        h2 {
+            font-size: 1.8rem;
+            margin-top: 0;
+            color: $oxford-blue;
+        }
+
+        .buttonsContainer {
+            display: flex;
+            flex-direction: row;
+            gap: 1rem;
+            margin-top: 0;
+
+            .button {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-family: inherit;
+                background-color: $oxford-blue;
+                color: $white;
+                width: 180px;
+                height: 40px;
+                font-size: 1.2rem;
+                font-weight: bold;
+                text-decoration: none;
+                border: 5px solid black;
+                transition: 0.3s ease;
+                cursor: pointer;
+
+                &:hover {
+                    filter: brightness(0.8);
+                }
+            }
+
+            .viewProjects {
+                @extend .button;
+                background-color: $white;
+                color: black;
+            }
+        }
+    }
+    .right {
+        width: 500px;
+        height: 80vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0 2rem;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+            @include bounce(5%);
+            animation: bounce 5s ease-in-out infinite;
+        }
+    }
+
+    // Responsive styles
+    @media (max-width: 768px) {
+        margin-top: $navbar-mobile-height;
+        flex-direction: column;
+        align-items: center;
+
+        .left, .right {
+            width: 100%;
+            height: auto;
+            padding: 1rem;
+        }
+
+        .left {
+            h1 {
+                font-size: 2.5rem;
+            }
+            h2 {
+                font-size: 1.5rem;
+            }
+
+            .buttonsContainer {
+                gap: 0.5rem;
+
+                .button {
+                    width: 100%;
+                    height: 35px;
+                    font-size: 1.2rem;
+                }
+            }
+        }
+
+        .right {
+            img {
+                height: auto;
+            }
+        }
+    }
+
+    @media (max-width: 480px) {
+        .left {
+            h1 {
+                font-size: 2rem;
+            }
+            h2 {
+                font-size: 1.2rem;
+            }
+
+            .buttonsContainer {
+                .button {
+                    font-size: 0.9rem;
+                }
+            }
+        }
+    }
+}
