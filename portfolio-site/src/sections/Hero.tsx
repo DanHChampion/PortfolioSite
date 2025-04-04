@@ -6,7 +6,7 @@ export default function Hero() {
     return (
       <section id="hero" className={styles.heroSection}>
         <div className={styles.left}>
-          <h1>Hi, I'm <br/> Dan Champion</h1>
+          <h1>Hi, I&apos;m <br/> Dan Champion</h1>
           <h2>A Full-Stack Developer</h2>
           <div className={styles.buttonsContainer}>
             <a

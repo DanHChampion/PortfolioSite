@@ -1,7 +1,6 @@
 "use client"; 
 
 import styles from "@/styles/about.module.scss";
-import Image from "next/image";
 import { useState, useEffect } from "react";
 
 export default function About() {
