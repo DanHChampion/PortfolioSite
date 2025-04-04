@@ -11,11 +11,13 @@ export default function About() {
     const words = summaryHtml.split(" ");
     
     const skills = [
-        { name: "JavaScript", value: 90, image: "/images/javascript.png" },
-        { name: "React", value: 85, image: "/images/react.png" },
-        { name: "Node.js", value: 80, image: "/images/nodejs.png" },
-        { name: "CSS", value: 75, image: "/images/css.png" },
-        { name: "Typescript", value: 70, image: "/images/nodejs.png" },
+        { name: "JavaScript/TypeScript", value: 90},
+        { name: "React", value: 90},
+        { name: "Angular", value: 60},
+        { name: "CSS/SCSS", value: 100},
+        { name: "Python", value: 80},
+        { name: "Django", value: 70},
+        { name: "C++", value: 60}
     ];
     const experiences = [
         { title: "Software Engineer", company: "Amadeus", year: "Aug 2023 - Present"},
