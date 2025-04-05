@@ -1,12 +1,11 @@
 @use '@/styles/variables.scss' as *;
 
 .heroSection {
-    color: black;
     display: flex;
     flex-direction: row;
     justify-content: center;
-    border-top: 0;
-    padding: 30px;
+    align-items: center;
+    padding: 35px;
 
     .left {
         width: 500px;
