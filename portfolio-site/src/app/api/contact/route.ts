@@ -19,7 +19,7 @@ export async function POST(req: NextRequest) {
   const mailOptions = {
     from: email,
     to: process.env.NEXT_PUBLIC_EMAIL_USER,
-    subject: `Portofolio Message from ${name}`,
+    subject: `Portfolio Message from ${name}`,
     text: `Name: ${name}\nEmail: ${email}\nMessage:\n${message}`,
   };
 
