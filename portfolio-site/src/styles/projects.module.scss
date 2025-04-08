@@ -92,6 +92,7 @@
                 width: 100%;
                 aspect-ratio: 5/3;
                 transition: 0.3s ease;
+                background-color: $white;
 
                 &:hover {
                     filter: brightness(0.8);
