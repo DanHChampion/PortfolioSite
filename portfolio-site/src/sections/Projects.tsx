@@ -16,16 +16,10 @@ const projects = [
         link: "/"
     },
     {
-        name: "Upcoming Project #1",
-        description: "Soon to reveal...",
-        imageUrl: "/",
-        link: ""
-    },
-    {
-        name: "Upcoming Project #2",
-        description: "Soon to reveal...",
-        imageUrl: "/",
-        link: ""
+        name: "Blockus AI",
+        description: "A showcase of multiple AI agents to master Blokus.",
+        imageUrl: "/images/blockus_ai.png",
+        link: "https://github.com/DanHChampion/BlockusAI"
     }
 ];
 
