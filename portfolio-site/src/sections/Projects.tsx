@@ -16,9 +16,9 @@ const projects = [
         link: "/"
     },
     {
-        name: "Blockus AI",
+        name: "Blokus AI",
         description: "A showcase of multiple AI agents to master Blokus.",
-        imageUrl: "/images/blockus_ai.png",
+        imageUrl: "/images/blokus_ai.png",
         link: "https://github.com/DanHChampion/BlockusAI"
     }
 ];
