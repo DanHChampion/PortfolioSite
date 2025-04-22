@@ -19,11 +19,11 @@ const projects = [
         name: "Blokus AI",
         description: "A showcase of multiple AI agents to master Blokus.",
         imageUrl: "/images/blokus_ai.png",
-        link: "https://github.com/DanHChampion/BlockusAI"
+        link: "https://github.com/DanHChampion/BlokusAI"
     },
     {
       name: "Cheesecake",
-      description: "My at-home video streaming platform for my media.",
+      description: "An at-home video streaming platform for your media.",
       imageUrl: "/images/cheesecake_sc.png",
       link: "https://github.com/DanHChampion/Cheesecake"
   }
