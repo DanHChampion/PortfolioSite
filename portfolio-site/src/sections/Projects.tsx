@@ -20,7 +20,13 @@ const projects = [
         description: "A showcase of multiple AI agents to master Blokus.",
         imageUrl: "/images/blokus_ai.png",
         link: "https://github.com/DanHChampion/BlockusAI"
-    }
+    },
+    {
+      name: "Cheesecake",
+      description: "My at-home video streaming platform for my media.",
+      imageUrl: "/images/cheesecake_sc.png",
+      link: "https://github.com/DanHChampion/Cheesecake"
+  }
 ];
 
 export default function Projects() {
