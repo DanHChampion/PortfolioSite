@@ -21,7 +21,7 @@ export default function Hero() {
         </div>
         <div className={styles.right}>
           <Image
-            src="/images/test.png"
+            src="/images/me.png"
             alt="Dan Champion"
             width={500}
             height={500}
