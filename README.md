@@ -1,7 +1,7 @@
 # 🗂️ Portfolio Site
 
+## Live site: 🔗 [danchampion.dev](https://danchampion.dev)
 ![screenshot](portfolio-site/public/images/portfolio_site.png)
-Link to the live site: [danchampion.dev](https://danchampion.dev)
 
 ## 📝 Description
 This is my personal portfolio site that showcases my projects and skills. It is built using React (Next.js). It also is responsive and works well on both desktop and mobile devices!
