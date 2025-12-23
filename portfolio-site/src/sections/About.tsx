@@ -12,12 +12,13 @@ export default function About() {
     
     const skills = [
         { name: "JavaScript/TypeScript", value: 90},
-        { name: "React", value: 90},
+        { name: "React", value: 100},
         { name: "Angular", value: 60},
         { name: "CSS/SCSS", value: 100},
-        { name: "Python", value: 80},
+        { name: "Python", value: 90},
         { name: "Django", value: 70},
-        { name: "C++", value: 60}
+        { name: "C++", value: 80},
+        { name: "Go", value: 60}
     ];
     const experiences = [
         { title: "Software Engineer", company: "Amadeus", year: "Aug 2023 - Present"},

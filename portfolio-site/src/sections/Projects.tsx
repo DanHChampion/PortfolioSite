@@ -3,29 +3,41 @@ import Image from "next/image";
 import Link from "next/link";
 
 const projects = [
-    {
-        name: "Quaky Gifts",
-        description: "A gift curation site for weird and unique gifts.",
-        imageUrl: "/images/quaky_gifts.png",
-        link: "https://www.quaky.gifts"
-    },
-    {
-        name: "Portfolio Site",
-        description: "A portfolio to display my projects.",
-        imageUrl: "/images/portfolio_site.png",
-        link: "/"
-    },
-    {
-        name: "Blokus AI",
-        description: "A showcase of multiple AI agents to master Blokus.",
-        imageUrl: "/images/blokus_ai.png",
-        link: "https://github.com/DanHChampion/BlokusAI"
-    },
-    {
-      name: "Cheesecake",
-      description: "An at-home video streaming platform for your media.",
-      imageUrl: "/images/cheesecake_sc.png",
-      link: "https://github.com/DanHChampion/Cheesecake"
+  {
+      name: "Quaky Gifts",
+      description: "A gift curation site for weird and unique gifts.",
+      imageUrl: "/images/quaky_gifts.png",
+      link: "https://www.quaky.gifts"
+  },
+  {
+      name: "Portfolio Site",
+      description: "A portfolio to display my projects.",
+      imageUrl: "/images/portfolio_site.png",
+      link: "/"
+  },
+  {
+    name: "Tien Len Online",
+    description: "An online version of the Vietnamese card game.",
+    imageUrl: "/images/tienlen.png",
+    link: "https://tien-len-delta.vercel.app/"
+  },
+  {
+      name: "Blokus AI",
+      description: "A showcase of multiple AI agents to master Blokus.",
+      imageUrl: "/images/blokus_ai.png",
+      link: "https://github.com/DanHChampion/BlokusAI"
+  },
+  {
+    name: "Cheesecake",
+    description: "An at-home video streaming platform for your media.",
+    imageUrl: "/images/cheesecake_sc.png",
+    link: "https://github.com/DanHChampion/Cheesecake"
+  },
+  {
+    name: "MoviePickerBot",
+    description: "A simple bot that helps you pick a movie to watch.",
+    imageUrl: "/images/moviepickerbot.png",
+    link: "https://danhchampion.github.io/MoviePickerBot/"
   }
 ];
 
