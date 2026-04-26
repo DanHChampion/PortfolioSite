@@ -16,10 +16,22 @@ const projects = [
       link: "/"
   },
   {
-    name: "Tien Len Online",
-    description: "An online version of the Vietnamese card game.",
-    imageUrl: "/images/tienlen.png",
-    link: "https://tien-len-delta.vercel.app/"
+    name: "Econito",
+    description: "An interactive platform to learn IB economics.",
+    imageUrl: "/images/econito.png",
+    link: "https://www.econito.co.uk"
+  },
+  {
+    name: "88th Pickleclub",
+    description: "A booking website for a pickleball club.",
+    imageUrl: "/images/88thpickleclub.png",
+    link: "https://www.88thpickleclub.ph"
+  },
+  {
+    name: "Star Commander Online",
+    description: "An online multiplayer coding game in space.",
+    imageUrl: "/images/starcommanderonline.png",
+    link: "https://starcommander.online"
   },
   {
       name: "Blokus AI",
@@ -32,6 +44,12 @@ const projects = [
     description: "An at-home video streaming platform for your media.",
     imageUrl: "/images/cheesecake_sc.png",
     link: "https://github.com/DanHChampion/Cheesecake"
+  },
+    {
+    name: "Tien Len Online",
+    description: "An online version of the Vietnamese card game.",
+    imageUrl: "/images/tienlen.png",
+    link: "https://tien-len-delta.vercel.app/"
   },
   {
     name: "MoviePickerBot",
